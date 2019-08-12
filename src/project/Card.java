@@ -11,7 +11,7 @@ package project;
  * should remember to add themselves as a modifier.
  * @author megha, 2019
  */
-public abstract class Card 
+public class Card 
 {
     //default modifier for child classes
     
@@ -19,8 +19,21 @@ public abstract class Card
      * Students should implement this method for their specific children classes 
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
+    String card; 
     
+    public Card(String cards) {
+        cards = card;   
+}
     @Override
-    public abstract String toString();
+    public String toString(){
+     return card;   
+    }
     
+    public String getCard(){
+        return card;
+    }
+   
+    public boolean match(){
+        return true;
+    }
 }

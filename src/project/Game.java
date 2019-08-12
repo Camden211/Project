@@ -16,6 +16,8 @@ public abstract class Game
 {
     private final String gameName;//the title of the game
     private ArrayList <Player> players;// the players of the game
+    private ArrayList <Card> deckInHand;
+    private int totalScore;
     
     public Game(String givenName)
     {
@@ -59,6 +61,28 @@ public abstract class Game
      */
     public abstract void declareWinner();
 
-   
+    public int getTotalScore()
+    {
+        return totalScore; 
+    }
+            
+    public ArrayList <Card> getDeckInHand() {
+        return deckInHand; 
+    }
     
+    public void addPoint() {
+       
+    }
+    
+    public void pair() {
+        
+    }
+    
+    public void pickUpCard() {
+        
+    }
+    
+    public Card dealCards() {
+        return null; 
+    }
 }//end class

@@ -12,7 +12,8 @@ package project;
 public abstract class Player 
 {
     private String playerID; //the unique ID for this player
-    
+    private GroupOfCards deck; 
+    private Game firstPlayer;
     /**
      * A constructor that allows you to set the player's unique ID
      * @param name the unique ID to assign to this player.
@@ -44,5 +45,7 @@ public abstract class Player
      * with your specific type of Player and filled in with logic to play your game.
      */
     public abstract void play();
+    
+    public abstract void turn();
     
 }

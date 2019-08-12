@@ -20,6 +20,7 @@ public class GroupOfCards
     //The group of cards, stored in an ArrayList
     private ArrayList <Card> cards;
     private int size;//the size of the grouping
+    private int numCards;
     
     public GroupOfCards(int givenSize)
     {
@@ -54,4 +55,7 @@ public class GroupOfCards
         size = givenSize;
     }
     
+    public int numberOfCardsLeft(int numCard) {
+       return numCard = numCards; 
+    }
 }//end class
